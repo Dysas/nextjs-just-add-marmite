@@ -11,29 +11,25 @@ const Skeleton = () => {
       <div className="s-content"></div>
 
       <style jsx>{`
-        h2,
-        h3 {
-          text-transform: uppercase;
+        .skeleton {
+          max-width: 1200px;
+          margin: 20px auto;
         }
-        .banner h2 {
-          margin: 0;
-          background: #fff;
-          display: inline-block;
-          padding: 20px;
-          position: relative;
-          top: -60px;
-          left: -10px;
-          transform: rotateZ(-1deg);
-          box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+        .skeleton > div {
+          background: #dbcc1a;
+          border-radius: 4px;
+          margin: 20px 0;
         }
-        .info p {
-          margin: 0;
+        .s-banner {
+          padding: 12% 0;
         }
-        .info span::after {
-          content: ', ';
+        .s-header {
+          padding: 15px 0;
+          max-width: 500px;
         }
-        .info span:last-child::after {
-          content: '.';
+        .s-content {
+          padding: 8px 0;
+          max-width: 1000px;
         }
       `}</style>
     </div>
